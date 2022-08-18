@@ -1,0 +1,43 @@
+:root {
+  /* Colors */
+  --white: hsl(0, 0%, 100%);
+  --light-blue: hsl(212, 100%, 50%);
+  --light-navy-blue: hsl(217, 21%, 21%);
+  --dark-navy-blue: hsl(220, 40%, 13%);
+}
+
+body {
+  background-color: var(--dark-navy-blue);
+  font-family: 'Space Mono', sans-serif;
+  font-weight: 400;
+  font-size: 0.813rem;
+  line-height: 1.563rem;
+  color: var(--white);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.625rem;
+  line-height: 2.407rem;
+}
+
+
+/* Sections */
+
+#top-section {
+  margin: 1.938rem 1.5rem 2.25rem 1.5rem;
+}
+
+#search-username {
+
+}
+
+.username{
+  display: inline;
+}
+
+.mode {
+  display: inline;
+  float: right;
+  text-transform: uppercase;
+}
