@@ -2,6 +2,7 @@
   /* Colors */
   --white: hsl(0, 0%, 100%);
   --light-blue: hsl(212, 100%, 50%);
+  --navy-blue: hsl(222, 41%, 20%);
   --light-navy-blue: hsl(217, 21%, 21%);
   --dark-navy-blue: hsl(220, 40%, 13%);
 }
@@ -9,7 +10,6 @@
 body {
   background-color: var(--dark-navy-blue);
   font-family: 'Space Mono', sans-serif;
-  font-weight: 400;
   font-size: 0.813rem;
   line-height: 1.563rem;
   color: var(--white);
@@ -41,12 +41,67 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 17.5rem;
+  gap: 32rem;
 }
 
 #search-username {
-  background-color: #1E2A47;
+  display: flex;
+  align-items: center;
+  padding: 1.37rem 2rem;
+  background-color: var(--navy-blue);
   border-radius: 0.9375rem;
+}
+
+.search-input {
+  border: transparent solid 2px;
+  background-color: var(--navy-blue);
+  width: 18rem;
+  color: var(--white);
+  font-family: 'Space Mono', sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.search-input::placeholder {
+  outline-width: 0;
+  color: var(--white);
+  opacity: 10; /* Firefox */
+  font-family: 'Space Mono', sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5625rem; /* 138.889% */
+}
+
+.search-input:focus {
+  outline-width: 0;
+}
+
+.search-input:focus::placeholder {
+  visibility: hidden;
+}
+
+.search-icon {
+  margin-right: 1.5rem;
+  width: 1.50363rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+
+.search-button {
+  width: 6.625rem;
+  height: 3.125rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: var(--light-blue);
+  border-color: transparent;
+  margin-left: auto;
+  color: var(--white);
+  font-family: 'Space Mono', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .username{
