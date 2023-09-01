@@ -25,14 +25,9 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
-}
-
-header {
-}
-
-main {
+  width: 60%;
+  margin: auto;
 }
 
 /* Sections */
@@ -41,13 +36,22 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 32rem;
 }
 
 #search-username {
   display: flex;
   align-items: center;
   padding: 1.37rem 2rem;
+  background-color: var(--navy-blue);
+  border-radius: 0.9375rem;
+}
+
+#main-section {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 1.37rem 2rem;
+  flex-direction: row;
   background-color: var(--navy-blue);
   border-radius: 0.9375rem;
 }
