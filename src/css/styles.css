@@ -21,11 +21,24 @@ h3 {
   line-height: 2.407rem;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+}
+
+main {
+}
 
 /* Sections */
 
 #top-section {
-  margin: 1.938rem 1.5rem 2.25rem 1.5rem;
+  margin: 0;
 }
 
 #search-username {
