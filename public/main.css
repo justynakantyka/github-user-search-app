@@ -48,10 +48,8 @@ h3 {
 
 #main-section {
   display: flex;
-  align-items: center;
   margin-top: 1.5rem;
-  padding: 1.37rem 2rem;
-  flex-direction: row;
+  padding: 3rem 3rem;
   background-color: var(--navy-blue);
   border-radius: 0.9375rem;
 }
@@ -108,11 +106,27 @@ h3 {
   line-height: normal;
 }
 
-.username{
-  
-}
-
 .mode {
   text-transform: uppercase;
   margin: auto 0;
+}
+
+/* Main section classes */
+
+.github-avatar {
+  width: 7.3125rem;
+  height: 7.3125rem;
+  border-radius: 7.3125rem;
+}
+
+.github-user-details {
+  margin-left: 2.31rem;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+
+.github-created {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  text-align: right;
 }

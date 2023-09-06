@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | GitHub user search app</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container">
+      <div id="top-section">
+        <h3 class="username">devfinder</h3>
+        <div class="mode">
+          Light
+          Dark
+        </div>
+      </div>
+      <form action= "/" id="search-username" method="POST">
+        <img class="search-icon" src="/images/icon-search.svg" alt="search-icon">
+        <input class="search-input" type="seach" id="name" name="username" placeholder="Search GitHub username..." />
+        <button class="search-button" type="submit">Search</button>
+      </form>
+      <div id="main-section">
+        <% if(locals.data) {%>
+        <img class="github-avatar" src=<%=data["avatar_url"]%> alt="github-avatar">
+        <div class="github-user-details">
+          <div class="github-username"><%= data.login %></div>
+          <div class="github-created">Joined <%=data.created_at%></div>
+        </div>
+        <%}%>
+    </div>
+  </div>
+</body>
+</html>
