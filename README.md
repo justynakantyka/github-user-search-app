@@ -15,7 +15,25 @@ Users should be able to:
 - Switch between light and dark themes
 - **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. _Hint_: Research `prefers-color-scheme` in CSS.
 
-### Built with
+## Setup
+**1. Clone this Repository:**
+```
+git clone git@github.com:justynakantyka/github-user-search-app.git
+```
+**2. Go to the gui-tests directory**
+```
+cd github-user-search-app
+```
+**3. Install Dependencies:**
+```
+npm i
+```
+**4. Run project:** \
+```
+nodemon index.js
+```
+
+## Built with
 - HTML
 - CSS
 - Axios
