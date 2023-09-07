@@ -1,8 +1,7 @@
 # GitHub user search app
 
-This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
 ## Overview
+This repository contains a solution for the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6) on Frontend Mentor. The application allows users to search for GitHub users using the public GitHub API. Additionally, the repository includes Cypress tests for the application.
 
 ## Setup
 **1. Clone this Repository:**
