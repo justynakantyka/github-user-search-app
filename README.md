@@ -27,10 +27,17 @@ Open a web browser and enter:
 localhost:3000
 ```
 
+## Tests
+Run Cypress tests for this project:
+```
+npm run cypress:open
+```
+
 ## Built with
 - HTML
 - CSS
 - Axios
+- Cypress
 
 ## To Do
 - [ ] View the optimal layout for the app depending on their device's screen size
