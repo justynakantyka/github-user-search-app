@@ -119,14 +119,89 @@ h3 {
   border-radius: 7.3125rem;
 }
 
+.github-top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .github-user-details {
   margin-left: 2.31rem;
   font-size: 1.625rem;
   font-weight: 700;
+  width: 100%;
 }
 
-.github-created {
+.github-name {
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.github-joined-date {
   font-size: 0.9375rem;
   font-weight: 400;
-  text-align: right;
+  line-height: normal;
+}
+
+.github-login {
+  color: var(--light-blue);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.github-bio {
+  margin-top: 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5625rem;
+  opacity: 0.75;
+}
+
+.github-repo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--dark-navy-blue);
+  padding: 0.94rem 2rem;
+  margin-top: 2rem;
+  border-radius: 0.625rem;
+}
+
+.github-repo-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.github-repo-title {
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+
+.github-repo-number {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.github-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.22rem;
+}
+
+.github-contact > div {
+  width: 50%;
+}
+
+.github-media {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  margin-top: 1.19rem;
+}
+
+.media-icon {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(287deg) brightness(106%) contrast(105%);
+  color: var(--white);
 }
