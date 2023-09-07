@@ -20,10 +20,10 @@
   <div class="container">
       <div id="top-section">
         <h3 class="username">devfinder</h3>
-        <div class="mode">
-          Light
-          Dark
-        </div>
+        <button class="mode" onclick="changeTheme()">
+          <div class="mode-title">Light</div>
+          <img class="mode-icon" src="/images/icon-sun.svg" alt="mode-icon">
+        </button>
       </div>
       <form action= "/" id="search-username" method="POST">
         <img class="search-icon" src="/images/icon-search.svg" alt="search-icon">
@@ -102,3 +102,10 @@
     </div>
 </body>
 </html>
+
+<script>
+  function changeTheme() {
+    var body = document.body;
+    body.classList.toggle("white-theme");
+  }
+</script>

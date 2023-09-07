@@ -1,6 +1,7 @@
 :root {
   /* Colors */
   --white: hsl(0, 0%, 100%);
+  --light-purple: hsl(227, 100%, 98%);
   --light-blue: hsl(212, 100%, 50%);
   --navy-blue: hsl(222, 41%, 20%);
   --light-navy-blue: hsl(217, 21%, 21%);
@@ -21,6 +22,11 @@ h3 {
   line-height: 2.407rem;
 }
 
+.white-theme {
+  background-color: var(--light-purple);
+  color: var(--light-nav);
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -36,6 +42,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 #search-username {
@@ -52,6 +59,21 @@ h3 {
   padding: 3rem 3rem;
   background-color: var(--navy-blue);
   border-radius: 0.9375rem;
+}
+
+.mode {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  font-family: 'Space Mono', sans-serif;
+  font-size: 0.813rem;
+  line-height: 1.563rem;
+  color: var(--white);
+  border-color: transparent;
+  text-transform: uppercase;
+  width: 10%;
 }
 
 .search-input {
@@ -104,11 +126,6 @@ h3 {
   font-size: 1rem;
   font-weight: 700;
   line-height: normal;
-}
-
-.mode {
-  text-transform: uppercase;
-  margin: auto 0;
 }
 
 /* Main section classes */
