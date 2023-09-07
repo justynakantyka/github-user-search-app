@@ -27,18 +27,18 @@
       </div>
       <form action= "/" id="search-username" method="POST">
         <img class="search-icon" src="/images/icon-search.svg" alt="search-icon">
-        <input class="search-input" type="seach" id="name" name="username" placeholder="Search GitHub username..." />
-        <button class="search-button" type="submit">Search</button>
+        <input class="search-input" type="seach" id="name" name="username" placeholder="Search GitHub username..." data-cy="search-input" />
+        <button class="search-button" type="submit" data-cy="search-button">Search</button>
       </form>
       <% if(locals.data) {%>
-        <div id="main-section">
-          <img class="github-avatar" src=<%=data["avatar_url"]%> alt="github-avatar">
+        <div id="main-section" data-cy="main-section">
+          <img class="github-avatar" src=<%=data["avatar_url"]%> alt="github-avatar" data-cy="github-avatar">
           <div class="github-user-details">
             <div class="github-top-section">
-              <div class="github-name"><%= data.name %></div>
+              <div class="github-name" data-cy="github-name"><%= data.name %></div>
               <div class="github-joined-date">Joined <%=data.created_at%></div>
             </div>
-            <div class="github-login">@<%= data.login %></div>
+            <div class="github-login" data-cy="github-login">@<%= data.login %></div>
             <div class="github-bio">
             <% if(data.bio !== null) {%>
               data.bio

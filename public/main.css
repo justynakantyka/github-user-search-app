@@ -92,6 +92,7 @@ h3 {
 }
 
 .search-button {
+  cursor: pointer;
   width: 6.625rem;
   height: 3.125rem;
   flex-shrink: 0;
