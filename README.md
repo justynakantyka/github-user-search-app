@@ -30,7 +30,12 @@ npm i
 ```
 **4. Run project:**
 ```
-nodemon index.js
+node index.js
+```
+**5. Open in browser:**
+Open a web browser and enter:
+```
+localhost:3000
 ```
 
 ## Built with

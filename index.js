@@ -25,7 +25,6 @@ app.post("/", async (req, res) => {
     const username = req.body["username"];
     const response = await axios.get(API_URL + username);
     const result = response.data;
-    console.log(result);
     res.render("index.ejs", {data: result});
   } catch (error) {
     console.error("Failed to make request:", error.message);

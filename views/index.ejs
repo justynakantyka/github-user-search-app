@@ -30,76 +30,75 @@
         <input class="search-input" type="seach" id="name" name="username" placeholder="Search GitHub username..." />
         <button class="search-button" type="submit">Search</button>
       </form>
-      <div id="main-section">
-        <% if(locals.data) {%>
-        <img class="github-avatar" src=<%=data["avatar_url"]%> alt="github-avatar">
-        <div class="github-user-details">
-          <div class="github-top-section">
-            <div class="github-name"><%= data.name %></div>
-            <div class="github-joined-date">Joined <%=data.created_at%></div>
-          </div>
-          <div class="github-login">@<%= data.login %></div>
-          <div class="github-bio">
-          <% if(data.bio !== null) {%>
-            data.bio
-          <% } else { %>
-            This profile has no bio
-          <% } %>
-          </div>
-          <div class="github-repo-container">
-            <div class="github-repo-detail">
-              <div class="github-repo-title">Repos</div>
-              <div class="github-repo-number">
-                <%= data.public_repos %>
+      <% if(locals.data) {%>
+        <div id="main-section">
+          <img class="github-avatar" src=<%=data["avatar_url"]%> alt="github-avatar">
+          <div class="github-user-details">
+            <div class="github-top-section">
+              <div class="github-name"><%= data.name %></div>
+              <div class="github-joined-date">Joined <%=data.created_at%></div>
+            </div>
+            <div class="github-login">@<%= data.login %></div>
+            <div class="github-bio">
+            <% if(data.bio !== null) {%>
+              data.bio
+            <% } else { %>
+              This profile has no bio
+            <% } %>
+            </div>
+            <div class="github-repo-container">
+              <div class="github-repo-detail">
+                <div class="github-repo-title">Repos</div>
+                <div class="github-repo-number">
+                  <%= data.public_repos %>
+                </div>
+              </div>
+              <div class="github-repo-detail">
+                <div class="github-repo-title">Followers</div>
+                <div class="github-repo-number">
+                  <%= data.followers %>
+                </div>
+              </div>
+              <div class="github-repo-detail">
+                <div class="github-repo-title">Following</div>
+                <div class="github-repo-number">
+                  <%= data.following %>
+                </div>
               </div>
             </div>
-            <div class="github-repo-detail">
-              <div class="github-repo-title">Followers</div>
-              <div class="github-repo-number">
-                <%= data.followers %>
+            <div class="github-contact">
+              <div>
+                <div class="github-media">
+                  <img class="media-icon" src="/images/icon-location.svg" alt="location-icon">
+                  <%= data.location %>
+                </div>
+                <div class="github-media">
+                  <img class="media-icon" src="/images/icon-website.svg" alt="website-icon">
+                  <%= data.blog %>
+                </div>
+              </div>
+              <div>
+                <div class="github-media">
+                  <img class="media-icon" src="/images/icon-twitter.svg" alt="twitter-icon">
+                  <% if(data.twitter_username !== null) {%>
+                    <%= data.twitter_username %>
+                  <% } else { %>
+                    Not Available
+                  <% } %>
+                </div>
+                <div class="github-media">
+                  <img class="media-icon" src="/images/icon-company.svg" alt="company-icon">
+                  <% if(data.company !== null) {%>
+                    @<%= data.company %>
+                  <% } else { %>
+                    Not Available
+                  <% } %>
+                </div>
               </div>
             </div>
-            <div class="github-repo-detail">
-              <div class="github-repo-title">Following</div>
-              <div class="github-repo-number">
-                <%= data.following %>
-              </div>
-            </div>
-          </div>
-          <div class="github-contact">
-            <div>
-              <div class="github-media">
-                <img class="media-icon" src="/images/icon-location.svg" alt="location-icon">
-                <%= data.location %>
-              </div>
-              <div class="github-media">
-                <img class="media-icon" src="/images/icon-website.svg" alt="website-icon">
-                <%= data.blog %>
-              </div>
-            </div>
-            <div>
-              <div class="github-media">
-                <img class="media-icon" src="/images/icon-twitter.svg" alt="twitter-icon">
-                <% if(data.twitter_username !== null) {%>
-                  <%= data.twitter_username %>
-                <% } else { %>
-                  Not Available
-                <% } %>
-              </div>
-              <div class="github-media">
-                <img class="media-icon" src="/images/icon-company.svg" alt="company-icon">
-                <% if(data.company !== null) {%>
-                  @<%= data.company %>
-                <% } else { %>
-                  Not Available
-                <% } %>
-              </div>
-            </div>
-          </div>
           </div>
         </div>
-        <%}%>
+      <%}%>
     </div>
-  </div>
 </body>
 </html>
