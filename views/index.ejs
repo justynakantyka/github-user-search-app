@@ -107,5 +107,8 @@
   function changeTheme() {
     var body = document.body;
     body.classList.toggle("white-theme");
+
+    var mode = document.getElementsByClassName("mode");
+    mode[0].classList.toggle("mode-white");
   }
 </script>
